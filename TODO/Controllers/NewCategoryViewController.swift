@@ -28,27 +28,45 @@ class NewCategoryViewController: UIViewController {
     @IBAction func colourChoice(_ sender: UIButton) {
         switch sender.tag {
         case 1:
-            print("red")
+            print("Red")
             colourChoice = "#F44336"
+            updateBorders(for: sender)
         case 2:
             print("Blue")
             colourChoice = "#E91E63"
+            updateBorders(for: sender)
         case 3:
+            print("Purple")
             colourChoice = "#9C27B0"
+            updateBorders(for: sender)
         case 4:
+            print("Blue")
             colourChoice = "#3F51B5"
+            updateBorders(for: sender)
         case 5:
+            print("Sky Blue")
             colourChoice = "#03A9F4"
+            updateBorders(for: sender)
         case 6:
+            print("Green")
             colourChoice = "#009688"
+            updateBorders(for: sender)
         case 7:
+            print("Lime")
             colourChoice = "#8BC34A"
+            updateBorders(for: sender)
         case 8:
+            print("Yellow")
             colourChoice = "#FFEB3B"
+            updateBorders(for: sender)
         case 9:
+            print("Orange")
             colourChoice = "#FF9800"
+            updateBorders(for: sender)
         case 10:
+            print("Brown")
             colourChoice = "#795548"
+            updateBorders(for: sender)
         default:
             print("colour not chosen")
         }
@@ -74,5 +92,13 @@ class NewCategoryViewController: UIViewController {
         }
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
     
+    func updateBorders(for button : UIButton) {
+        button.layer.borderWidth = 5
+        button.layer.borderColor = UIColor.flatGray.cgColor
+    }
+
 }

@@ -97,7 +97,7 @@ class CategoryViewController: SwipeTableViewController{
                 destinationVC.selectedCategory = categories?[indexPath.row]
             }
         } else if segue.identifier == "goToNewCategory" {
-            let destinationVC = segue.destination as! NewCategoryViewController
+            //let destinationVC = segue.destination as! NewCategoryViewController
         }
     }
 }
