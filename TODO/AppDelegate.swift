@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //print(Realm.Configuration.defaultConfiguration.fileURL)
         
+       UIApplication.shared.statusBarStyle = .lightContent
+        
         do {
             _ = try Realm()
             
@@ -27,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         return true
+        
     }
     
 }

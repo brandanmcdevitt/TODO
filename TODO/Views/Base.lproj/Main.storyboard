@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.60893064737319946" green="0.78513228893280029" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.60893064737319946" green="0.78513228893280029" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.62745098040000002" green="0.78039215689999997" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -60,7 +60,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="TODO" id="g0F-lP-8LK">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="fsb-3J-pcm">
-                            <color key="tintColor" red="0.19997966289520264" green="0.20001339912414551" blue="0.19996902346611023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="addButtonPressed:" destination="4uy-c3-pSM" id="FgP-pK-u62"/>
                                 <segue destination="8eD-mk-VgV" kind="show" identifier="goToNewCategory" id="fcH-X4-QgC"/>

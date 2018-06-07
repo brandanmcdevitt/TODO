@@ -16,6 +16,7 @@ class NewCategoryViewController: UIViewController {
     var categories: Results<Category>?
     let newCategory = Category()
     var colourChoice : String = ""
+    let appColour : String = "#a0c71e"
     @IBOutlet weak var categoryName: UITextField!
     @IBOutlet weak var saveButton: UIButton!
     
@@ -23,6 +24,15 @@ class NewCategoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        guard let navbar = navigationController?.navigationBar else {fatalError("Navigation Controller does not exist")}
+        guard let navBarColour = UIColor(hexString: appColour) else { fatalError() }
+        navbar.barTintColor = navBarColour
+        //navbar.tintColor = ContrastColorOf(navBarColour, returnFlat: true)
+        navbar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
+        navbar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
     }
 
     @IBAction func colourChoice(_ sender: UIButton) {
