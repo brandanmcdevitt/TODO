@@ -5,3 +5,4 @@
 - [ ] Add more colour options
 - [ ] Deselect previously picked colour in New Category screen
 - [ ] Add option for user to edit their category/item
+- [ ] Add options menu with dark-mode
