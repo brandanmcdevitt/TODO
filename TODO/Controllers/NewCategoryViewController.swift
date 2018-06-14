@@ -15,8 +15,8 @@ class NewCategoryViewController: UIViewController {
     let realm = try! Realm()
     var categories: Results<Category>?
     let newCategory = Category()
-    var colourChoice : String = ""
-    let appColour : String = "#a0c71e"
+    var colourChoice = ""
+    let appColour = "#a0c71e"
     @IBOutlet weak var categoryName: UITextField!
     @IBOutlet weak var saveButton: UIButton!
     
